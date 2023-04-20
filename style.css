@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: #583371;
     scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 .menu{
@@ -16,6 +18,7 @@ body{
     justify-content: space-around;
     background-color: #660066;
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -36,9 +39,8 @@ content div{
     border: #98cc31 5px solid;
     border-radius: 10px;
     word-break: break-all;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    
+    margin-top: 30px;
+    margin-bottom: 1px;
 }
 
 
@@ -62,10 +64,21 @@ content div{
     height: auto;
     background-color: #660066;
     z-index: -1;
-    position: absolute;
+    position: relative;
     border: #660066 solid 10px;
-    margin-top: auto;
+    margin-top: 1px;
 }
+
+.linha2{
+    width: 100%;
+    height: auto;
+    background-color: #660066;
+    z-index: -1;
+    position: absolute;
+    margin-top: 1px;
+    border: #660066 solid 10px;
+}
+
 .menu a{
     text-decoration: none;
     color: #fff;
@@ -83,4 +96,174 @@ content div{
 .menu img{
     border-radius: 60%;
     border: 1px solid #fff;
+}
+
+#acais{
+    background-color: #98cc31;
+    padding: 1rem 0;
+    width: 60%;
+    position: relative;
+    height: 20%;
+    flex-direction: column;
+    border: #98cc31 5px solid;
+    border-radius: 10px;
+    word-break: break-all;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    z-index: 2;
+}
+
+#acais h1{
+    font-size: 3rem;
+    color: #660066;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.items{
+    background-color: #98cc31;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    flex-direction: column;
+    border: #98cc31 5px solid;
+    word-break: break-all;
+    color: #583371;
+    font-size: 1.5rem;
+}
+
+.custom-shape-divider-top-1681874449 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1681874449 svg {
+    position: relative;
+    display: block;
+    width: calc(140% + 1.3px);
+    height: 25px;
+}
+
+.divI{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 300px;
+    width: 100%;
+}
+
+.bloco1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    justify-items: center;
+    background-color: #98cc31;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.bloco1:hover{
+    transform: scale(1.1);
+}
+
+.bloco1 img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.bloco1 h1{
+    font-size: 2rem;
+    color: #660066;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bloco1 h3{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 30px;
+    font-size: larger;
+}
+
+.bloco2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    justify-items: center;
+    background-color: #98cc31;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.preco{
+    border-bottom: 4px solid #fff;
+    background-color: #583371;
+    padding: 1rem;
+    font-size: large;
+    color: #fff;
+}
+
+img{
+    width: 128px;
+    height: 128px;
+}
+
+@media screen and (max-width: 800px) {
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #660066;
+        position: relative;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu img{
+        margin-bottom: 30px;
+    }
+
+}
+
+.tipos{
+    background-color: #98cc31;
+    padding: 1rem 0;
+    width: 60%;
+    position: relative;
+    height: 20%;
+    flex-direction: column;
+    border: #98cc31 5px solid;
+    border-radius: 10px;
+    word-break: break-all;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    z-index: 2;
 }
