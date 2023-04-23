@@ -10,6 +10,8 @@ body{
     background-color: #583371;
     scroll-behavior: smooth;
     overflow-y: scroll;
+    min-height: 100vh;
+    padding-bottom: 50px;
 }
 
 .menu{
@@ -17,7 +19,7 @@ body{
     align-items: center;
     justify-content: space-around;
     background-color: #660066;
-    position: fixed;
+    position: static;
     z-index: 2;
     top: 0;
     left: 0;
@@ -63,7 +65,7 @@ content div{
     width: 100%;
     height: auto;
     background-color: #660066;
-    z-index: -1;
+    z-index: 1;
     position: relative;
     border: #660066 solid 10px;
     margin-top: 1px;
@@ -73,9 +75,20 @@ content div{
     width: 100%;
     height: auto;
     background-color: #660066;
-    z-index: -1;
-    position: absolute;
+    z-index: 1;
+    position: relative;
     margin-top: 1px;
+    border: #660066 solid 10px;
+}
+
+.linha3{
+    width: 100%;
+    height: auto;
+    background-color: #660066;
+    z-index: 1;
+    position: relative;
+    margin-top: 1px;
+    border-radius: 30px;
     border: #660066 solid 10px;
 }
 
@@ -132,23 +145,6 @@ content div{
     word-break: break-all;
     color: #583371;
     font-size: 1.5rem;
-}
-
-.custom-shape-divider-top-1681874449 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1681874449 svg {
-    position: relative;
-    display: block;
-    width: calc(140% + 1.3px);
-    height: 25px;
 }
 
 .divI{
@@ -221,6 +217,10 @@ content div{
     transition: all 0.5s;
 }
 
+.bloco2:hover{
+    transform: scale(1.1);
+}
+
 .preco{
     border-bottom: 4px solid #fff;
     background-color: #583371;
@@ -251,10 +251,87 @@ img{
         margin-bottom: 30px;
     }
 
+    #Sobre h1{
+        font-size: 2rem;
+        color: #660066;
+        font-weight: 600;
+    }
+
+    #Sobre h3{
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .local{
+        background-color: #98cc31;
+        color: #660066;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: auto;
+    }
+
+    .local p{
+        font-size: 1.3rem;
+    }
+
+    #ondeesta h1{
+        font-size: 1.3rem;
+    }
+
+    .tipos h1{
+        font-size: 1.3rem;
+    }
+
+    .bloco3 div p{
+        font-size: medium;
+    }
 }
 
 .tipos{
+    padding: 1rem 0;
+    width: 85%;
+    position: relative;
+    height: 20%;
+    flex-direction: column;
+    border-radius: 10px;
+    word-break: break-all;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.t1{
+    margin-bottom: 10%;
     background-color: #98cc31;
+    padding: 1rem 0;
+    border-radius: 30px;
+    color:#660066;
+    position: relative;
+    width: 60%;
+}
+
+.divII{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 300px;
+    width: 100%;
+}
+
+#ondeesta{
+    background-color: #98cc31;
+    color: #660066;
     padding: 1rem 0;
     width: 60%;
     position: relative;
@@ -267,3 +344,73 @@ img{
     margin-bottom: 5rem;
     z-index: 2;
 }
+
+.info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.local{
+    background-color: #98cc31;
+    color: #660066;
+    border-radius: 40px;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+}
+
+.rodape{
+    display: flex;
+    background-color: #660066;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 1rem 0;
+    border-radius: 20px;
+}
+
+.bloco3 div{
+    background-color: #98cc31;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: xx-large;
+    color: #660066;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bloco3{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.contatos{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+p svg{
+    background-color: #660066;
+    border-radius: 30px;
+    color: #98cc31;
+    width: 64px;
+    height: 64px;
+    padding: 6px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+  
